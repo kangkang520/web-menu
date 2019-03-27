@@ -1,6 +1,8 @@
 # WEB-MENU
 浏览器自定义菜单
 
+![预览](https://github.com/kangkang520/web-menu/blob/master/doc/preview.png?raw=true)
+
 ## 安装
 ```
 npm install --save web-menu
