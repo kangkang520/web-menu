@@ -1,0 +1,32 @@
+{
+	"name": "web-menu",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"types": "typing/menu.d.ts",
+	"scripts": {
+		"build": "webpack && lessc src/style.less>dist/style.css && echo done!"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kangkang520/web-menu.git"
+	},
+	"keywords": [
+		"html",
+		"javascript",
+		"menu",
+		"web",
+		"popmenu",
+		"contextmenu"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"clean-webpack-plugin": "^2.0.1",
+		"less": "^3.9.0",
+		"ts-loader": "^5.3.3",
+		"typescript": "^3.3.4000",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.3.0"
+	}
+}
