@@ -15,7 +15,6 @@ function mkelem<K extends keyof HTMLElementTagNameMap>(kind: K, attrs: IElemAttr
 }
 
 const SUB_MENU_SVG = '<svg t="1553707009669" class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3931"><path d="M735.1 510.8L368.4 144.7l-96.7 96.8 268.6 268.6-268.6 268.8 96.7 96.7 366.7-364.8-11.3-0.7z" p-id="3932"></path></svg>'
-const DIV_MENU_ITEM = mkelem('div', { className: 'web-menu-item div' }, [mkelem('div', {})])
 
 abstract class MenuItem {
 	/** 菜单项类型 */
@@ -26,7 +25,7 @@ abstract class MenuItem {
 
 export class DivWebMenuItem extends MenuItem {
 	public readonly type: 'div' = 'div'
-	public readonly html: HTMLDivElement = DIV_MENU_ITEM
+	public readonly html = mkelem('div', { className: 'web-menu-item div' }, [mkelem('div', {})])
 }
 
 export class TextWebMenuItem extends MenuItem {
